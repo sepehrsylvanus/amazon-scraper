@@ -1,3 +1,4 @@
+import Modal from "@/components/Modal";
 import PriceInfoCard from "@/components/PriceInfoCard";
 import ProductCard from "@/components/ProductCard";
 import { getProductbyId, getSimilarProducts } from "@/lib/actions";
@@ -155,7 +156,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
               />
             </div>
           </div>
-          Modal
+          <Modal productId={product._id!} />
         </div>
       </div>
 
