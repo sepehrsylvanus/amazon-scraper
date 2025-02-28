@@ -50,7 +50,7 @@ export async function scrapeAmazonProduct(url: string) {
 
     const discountRate = $(".savingsPercentage").text().replace(/[-%]/g, "");
 
-    const description = extractDescription($);
+    const description = $(".a-expander-content span").text().trim();
 
     const data = {
       url,
