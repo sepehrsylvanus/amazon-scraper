@@ -79,7 +79,6 @@ export async function generateEmailBody(
 
   return { subject, body };
 }
-console.log({ password: process.env.EMAIL_PASSWORD });
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
