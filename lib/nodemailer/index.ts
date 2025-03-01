@@ -86,7 +86,6 @@ const transporter = nodemailer.createTransport({
     user: "mr.forte.world@gmail.com",
     pass: "glofikrpxokucdds",
   },
-  maxConnections: 1,
 });
 
 export const sendEmail = async (
